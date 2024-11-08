@@ -1,0 +1,44 @@
+/* Pastikan sidebar memiliki z-index lebih rendah */
+.main-sidebar {
+  z-index: 1000;
+}
+
+/* Pastikan konten utama berada di atas sidebar */
+.content-wrapper {
+  z-index: 2000;
+  position: relative;
+}
+
+.wrapper {
+  margin-top: 30px; /* Sesuaikan dengan jarak yang diinginkan */
+}
+
+/* Tambahkan padding pada konten utama agar tidak tertutup sidebar */
+.wrapper .content {
+  padding-left: 250px; /* Sesuaikan dengan lebar sidebar */
+}
+
+/* Pastikan tabel DataTables memiliki z-index yang cukup tinggi */
+.dataTables_wrapper {
+  z-index: 2100;
+  position: relative;
+}
+
+/* .margin-left {
+  margin-left: 10px; 
+} */
+.form-group {
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+.col-form-label {
+  text-align: left;
+  padding-left: 18rem;
+}
+
+.form-control,
+.custom-select {
+  width: 100%;
+  margin-left: 1.5rem;
+}

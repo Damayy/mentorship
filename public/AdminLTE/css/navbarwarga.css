@@ -1,0 +1,97 @@
+.navbar {
+  width: 100%; /* Atur lebar navbar sesuai kebutuhan, misalnya 100% untuk lebar penuh */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #343a40; /* Ganti dengan warna navbar yang diinginkan */
+  padding: 0.5rem 1rem; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+/* Pastikan dropdown menu tidak mempengaruhi lebar navbar */
+.nav-item {
+  position: relative;
+  margin-right: 20px; /* Atur jarak antara item navigasi sesuai kebutuhan */
+}
+/* Styling dropdown menu */
+.dropdown-menu {
+  min-width: 200px; /* Atur lebar dropdown sesuai kebutuhan */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Gaya bayangan dropdown untuk penampilan lebih baik */
+  background-color: #343a40; /* Warna latar belakang dropdown */
+  border: 1px solid #495057; /* Border dropdown */
+  border-radius: 5px; /* Radius pada sudut dropdown */
+  padding: 0; /* Menghilangkan padding default */
+}
+
+/* Optional: styling untuk icon */
+.nav-link .fa-user {
+  font-size: 1.25rem; /* Atur ukuran icon sesuai kebutuhan */
+}
+
+/* Styling header content */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-content .image img {
+  width: 50px; /* Sesuaikan ukuran logo */
+  height: auto;
+}
+
+.header-content .info {
+  color: #fff; /* Warna teks info */
+  margin-left: 15px; /* Jarak antara logo dan informasi */
+}
+
+.header-content .info .d-block {
+  margin: 0;
+}
+
+.header-content .info .city {
+  font-size: 0.9rem; /* Ukuran font kota */
+}
+
+/* Styling untuk navbar items */
+.navbar-nav {
+  list-style: none; /* Menghilangkan bullet point pada list */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Menyusun item navbar secara horizontal */
+}
+
+.nav-item .nav-link {
+  color: #fff; /* Warna teks link */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  padding: 10px; /* Padding untuk link */
+  display: flex;
+  align-items: center;
+}
+
+.nav-item .nav-link:hover {
+  background-color: #495057; /* Warna latar belakang saat hover */
+  border-radius: 5px; /* Menambahkan radius pada sudut */
+}
+
+.nav-item .dropdown-menu .dropdown-item {
+  color: #fff; /* Warna teks item dropdown */
+  padding: 10px 15px; /* Padding untuk item dropdown */
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #495057; /* Warna latar belakang item saat hover */
+}
+
+.nav-item .dropdown-menu .dropdown-divider {
+  border-color: #495057; /* Warna divider dropdown */
+}
+
+/* Styling untuk link Logout */
+.dropdown-item.text-danger {
+  color: #dc3545; /* Warna merah untuk teks */
+}
+
+/* Styling untuk ikon di samping teks Logout */
+.dropdown-item .fa-sign-out-alt {
+  font-size: 1.1rem; /* Ukuran ikon, sesuaikan sesuai kebutuhan */
+}

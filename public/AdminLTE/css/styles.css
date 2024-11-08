@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.background-index {
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+  padding: 10px 20px;
+}
+
+.card-body .icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.navbar .header-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .header-content .image {
+  margin-right: 10px;
+}
+
+.navbar .header-content .info {
+  color: white;
+}
+
+.navbar .header-content .image img {
+  max-width: 50px;
+  height: 55px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.navbar ul li a:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+.contact .container {
+  margin-top: 5rem;
+}
+
+.auth-links-container .register-link:hover {
+  background-color: darkred;
+}
+
+.content-index {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  margin-top: 180px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.white-box {
+  background-color: white;
+  color: #222;
+}
+
+.content h1 {
+  margin: 20px 0;
+}
+
+.content p {
+  margin: 20px 0;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.info p:first-child {
+  font-weight: bold;
+}
+.d-block {
+  margin-bottom: 0.5rem;
+}
+
+.d-block strong {
+  font-weight: bold;
+}
+
+.city {
+  font-size: 0.9em;
+}
+
+.special-white-box h2 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+}

@@ -1,0 +1,177 @@
+/* Kurangi margin bawah untuk mengurangi jarak dengan tabel */
+h1.text-center {
+  margin-bottom: 5px;
+}
+
+/* Mengatur padding atas */
+.content {
+  padding-top: 0;
+  margin-top: 0; /* Pastikan margin atas juga diatur */
+}
+
+/* Kurangi padding atas untuk mengurangi jarak */
+/* .table-responsive {
+  padding-top: 0;
+  margin-top: 0; 
+} */
+
+/* Mengatur margin dan padding umum untuk body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Mengatur lebar container utama */
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Menambahkan flexbox pada content untuk pusatkan tabel */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mengatur lebar container tabel */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Mengatur lebar tabel */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+/* Menyesuaikan ukuran font tabel */
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Menambahkan garis pada tabel */
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+/* Mengatur warna dan garis tabel */
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+/* Mengatur header tabel */
+.table thead th {
+  background-color: #f8f9fa;
+}
+
+/* Menambahkan responsive pada tabel */
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mengatur margin dan padding */
+.content {
+  padding: 10px 20px; /* Kurangi padding atas untuk mengurangi jarak */
+}
+
+.table-responsive {
+  max-width: 1200px; /* Atur lebar maksimum tabel */
+}
+.btn-custom-small {
+  font-size: 12px;
+  /* Mengatur ukuran font */
+  padding: 0.25rem 0.5rem;
+  /* Mengatur padding untuk ukuran tombol */
+}
+
+.ps-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ps-timeline li {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.ps-timeline li .ps-step {
+  position: absolute;
+  top: -1.5rem; /* Adjust based on your button size */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 50%;
+  width: 2rem; /* Adjust size as needed */
+  height: 2rem; /* Adjust size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+  border: 2px solid black; /* Optional border for visibility */
+}
+.btn-warning {
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+/* Mengatur latar belakang gambar pada modal */
+.modal-bg-image .modal-content {
+  position: relative; /* Untuk memposisikan overlay di atas gambar */
+  background-image: url("../image/logo.jpg"); /* Ganti dengan path gambar Anda */
+  background-size: 30% auto; /* Menyesuaikan ukuran gambar */
+  background-position: center; /* Menyelaraskan gambar di tengah */
+  background-repeat: no-repeat; /* Mencegah gambar dari pengulangan */
+  color: white; /* Mengatur warna teks menjadi putih untuk kontras */
+}
+
+/* Menambahkan overlay semi-transparan di atas gambar */
+.modal-bg-image .modal-content::before {
+  content: ""; /* Menggunakan konten kosong untuk overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Warna latar belakang semi-transparan untuk mengurangi kontras gambar */
+  z-index: 1; /* Menempatkan overlay di atas gambar */
+}
+
+/* Menyesuaikan konten modal agar teks tetap terbaca di atas overlay */
+.modal-bg-image .modal-body,
+.modal-bg-image .modal-footer {
+  position: relative; /* Menempatkan konten di atas overlay */
+  background-color: transparent; /* Mengatur latar belakang transparan agar gambar tetap terlihat */
+  color: white; /* Mengatur warna teks menjadi putih untuk kontras */
+  z-index: 2; /* Menempatkan konten di atas overlay */
+}
+
+/* Mengatur posisi dan jarak konten modal */
+.modal-bg-image .modal-header,
+.modal-bg-image .modal-body,
+.modal-bg-image .modal-footer {
+  padding: 1rem; /* Mengatur jarak padding untuk konten */
+}

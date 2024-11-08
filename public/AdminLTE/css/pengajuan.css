@@ -1,0 +1,31 @@
+/* Mengatur lebar konten agar tidak tertutup sidebar */
+.content {
+  width: 100%; /* Sesuaikan dengan lebar sidebar */
+  margin-left: 70px; /* Sesuaikan dengan lebar sidebar */
+  /* margin-top: 100px; */
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+/* Tambahan untuk memastikan tabel tidak keluar dari area konten */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.card-body {
+  text-align: left;
+  padding: 40px;
+  width: 100%;
+}
+
+.card-header .btn-primary {
+  display: inline-flex; /* Inline-flex agar hanya selebar konten */
+  align-items: center;
+  margin-bottom: 10px; /* Tambahkan jarak di bawah tombol */
+  margin-left: 20px; /* Tambahkan jarak dari kiri */
+}
+
+.card-header .btn-primary i {
+  margin-right: 8px; /* Tambahkan jarak antara ikon dan teks */
+  font-size: 1.25em; /* Ukuran ikon lebih besar */
+}

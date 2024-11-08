@@ -1,0 +1,181 @@
+/* Mengatur margin dan padding untuk menghindari jarak yang tidak diinginkan */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-position: center; /* Memusatkan background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Tambahan untuk memastikan posisi relatif */
+  min-height: 100vh; /* Membuat elemen setidaknya setinggi viewport */
+}
+
+/* Gaya untuk header dan navbar */
+header {
+  margin-bottom: 1rem; /* Jarak antara navbar dan konten */
+}
+
+/* Gaya untuk konten utama */
+.content {
+  padding: 20px; /* Menambahkan padding jika diperlukan */
+  margin: 0 auto; /* Memastikan konten berada di tengah */
+}
+/* Styling umum untuk navbar */
+nav.navbar {
+  background-color: #343a40; /* Warna latar belakang navbar */
+  padding: 10px 20px; /* Padding atas dan bawah */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; /* Menyebar konten secara merata */
+  border-bottom: 1px solid #dee2e6; /* Garis bawah navbar */
+}
+
+/* Styling untuk konten header */
+nav.navbar .header-content {
+  display: flex;
+  align-items: center;
+}
+
+nav.navbar .header-content .image img {
+  height: 55px; /* Tinggi gambar logo */
+  width: auto;
+  margin-right: 10px; /* Jarak antara logo dan info */
+}
+.white-box-top-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* Jarak antar kotak */
+  margin-bottom: 1rem; /* Jarak bawah antara baris atas dan bawah */
+}
+
+/* Gaya untuk white-box secara umum */
+.white-box {
+  flex: 1; /* Membuat white-box menyesuaikan lebar kontainer */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Jarak bawah antara white box */
+}
+
+/* Kontainer untuk menyusun white-box secara horizontal di bagian bawah */
+.white-box-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* Jarak antar kotak */
+}
+
+/* Gaya khusus untuk white-box "Visi" */
+.white-box-visi {
+  flex: 1; /* Membuat white-box menyesuaikan lebar kontainer */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  color: black;
+}
+
+/* Gaya khusus untuk white-box "Misi" */
+.white-box-misi {
+  flex: 1; /* Membuat white-box menyesuaikan lebar kontainer */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  color: black;
+}
+
+/* Gaya untuk judul dan paragraf di dalam white-box */
+.white-box h1,
+.white-box p,
+.white-box-visi h2,
+.white-box-misi h2,
+.white-box-visi h3,
+.white-box-misi h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.auth-links-container {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-links-container .auth-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.auth-links-container .login-link {
+  background-color: blue;
+}
+
+.auth-links-container .login-link:hover {
+  background-color: darkblue;
+}
+
+.auth-links-container .register-link {
+  background-color: red;
+}
+.splide__arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Membuat panah ke kiri dan ke kanan berada di ujung kiri dan kanan */
+  pointer-events: none; /* Agar tombol navigasi tidak mengganggu klik konten lainnya */
+}
+
+.splide__arrow {
+  background-color: rgba(0, 0, 0, 0.5); /* Warna background semi-transparan */
+  color: #fff; /* Warna ikon panah */
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  pointer-events: all; /* Mengaktifkan klik pada tombol navigasi */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.splide__arrow:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Mengubah warna background saat hover */
+}
+
+.splide__arrow--prev {
+  left: 10px; /* Posisi panah kiri */
+}
+
+.splide__arrow--next {
+  right: 10px; /* Posisi panah kanan */
+}
+
+.splide__arrow i {
+  font-size: 24px; /* Ukuran ikon panah */
+}

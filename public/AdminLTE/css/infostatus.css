@@ -1,0 +1,30 @@
+.status-badge {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 1em;
+  color: #fff;
+  background-color: #007bff; /* Warna biru */
+}
+
+.status-badge.selesai {
+  background-color: #007bff; /* Warna biru */
+}
+
+/* Tambahkan warna lain jika diperlukan */
+.status-badge.pending {
+  background-color: #ffc107; /* Kuning */
+}
+
+.status-badge.failed {
+  background-color: #dc3545; /* Merah */
+}
+
+.status-badge.completed {
+  background-color: #28a745; /* Hijau */
+}
